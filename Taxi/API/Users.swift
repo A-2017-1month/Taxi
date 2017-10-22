@@ -18,15 +18,15 @@ extension API {
     static var router: Router = .all // Default routing
 
     // Returns message(String) from server or error reason(Error).
-    class func all() -> Task<[[String]], Error> {
+    class func all() -> Task<[[String : String]], Error> {
       router = .all
-      let task = Task<[[String]], Error> { result in
+      let task = Task<[[String : String]], Error> { result in
 
         Alamofire.request(path, method: .get, encoding: JSONEncoding.default)
         .responseJSON(completionHandler: { response in
 
           // Object mapping in your favorite way.
-          guard let message = (response.result.value as! [AnyObject])[0]["result"] as? String else {
+          guard let users = (response.result.value as! [AnyObject])[0]["result"] as? [[String : String]] else {
 
             let reason = response.result.description as AnyObject
 
@@ -34,7 +34,7 @@ extension API {
 
           }
 
-          result(APIResult<String>.response(message))
+          result(APIResult<[[String : String]]>.response(users))
 
           })
 

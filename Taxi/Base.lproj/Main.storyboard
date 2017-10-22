@@ -237,6 +237,30 @@
             <point key="canvasLocation" x="2989.5999999999999" y="489.80509745127438"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="JLu-1E-QKp">
+            <objects>
+                <viewController id="uR2-t1-qr0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixp-VA-Sbh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清算完了しました！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRa-CF-Wbf">
+                                <rect key="frame" x="118" y="212" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dWU-y3-k2F"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6M-AI-jOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3770" y="490"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="FtK-dX-BIJ">
             <objects>
                 <viewController id="LlR-AT-L0n" sceneMemberID="viewController">

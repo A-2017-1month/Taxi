@@ -6,5 +6,6 @@
 //  Copyright © 2017年 清野隼史. All rights reserved.
 //
 
-import Foundation
+final class API {
 
+}

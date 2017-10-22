@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var IDForm: UITextField!
+    
+    @IBOutlet weak var PasswordForm: UITextField!
+    
 
+    @IBAction func SignInButton(_ sender: UIButton) {
+        
+    }
 }
 

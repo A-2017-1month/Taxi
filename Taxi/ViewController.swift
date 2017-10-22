@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func profileEditScreenTransition(_ sender: Any) {
+ 
+    @IBAction func profileEditScreenTransition(_ sender: UIButton) {
         let storyboard: UIStoryboard = UIStoryboard(name: "ProfileEditController", bundle: nil)
         let nextView = storyboard.instantiateViewController(withIdentifier: "profileedit") as! ProfileEditController
         self.present(nextView, animated: true, completion: nil)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MapControllerController: UIViewController {
+class MapController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,9 @@ class MapControllerController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var IDForm: UITextField!
-    
-    @IBOutlet weak var PasswordForm: UITextField!
-    
-    
-    @IBAction func SignInButton(_ sender: UIButton) {
-        
+    @IBAction func matchingListScreenTransition(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "MatchingListController", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "matchinglist") as! MatchingListController
+        self.present(nextView, animated: true, completion: nil)
     }
 }

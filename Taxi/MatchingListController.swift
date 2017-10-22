@@ -20,12 +20,14 @@ class MatchingListController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var IDForm: UITextField!
-    
-    @IBOutlet weak var PasswordForm: UITextField!
-    
-    
-    @IBAction func SignInButton(_ sender: UIButton) {
-        
+    @IBAction func payEndScreenTransition(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "PayEndController", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "") as! ProfileEditController
+        self.present(nextView, animated: true, completion: nil)
+    }
+    @IBAction func profileScreenTransition(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "ProfileEditController", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileEditController
+        self.present(nextView, animated: true, completion: nil)
     }
 }

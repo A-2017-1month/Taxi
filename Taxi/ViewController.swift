@@ -20,13 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var IDForm: UITextField!
+    @IBAction func profileEditScreenTransition(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "ProfileEditController", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "profileedit") as! ProfileEditController
+        self.present(nextView, animated: true, completion: nil)
+    }
     
-    @IBOutlet weak var PasswordForm: UITextField!
-    
-
-    @IBAction func SignInButton(_ sender: UIButton) {
-        
+    @IBAction func mapScreenTransition(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "MapController", bundle: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "map") as! MapController
+        self.present(nextView, animated: true, completion: nil)
     }
 }
 

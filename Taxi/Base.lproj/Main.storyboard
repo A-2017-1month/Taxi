@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Map Controller Controller-->
         <scene sceneID="Tez-1F-3Le">
             <objects>
-                <viewController id="Sbt-hD-YNN" sceneMemberID="viewController">
+                <viewController id="Sbt-hD-YNN" customClass="MapControllerController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sf2-7c-hCW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="1500" y="131"/>
         </scene>
-        <!--View Controller-->
+        <!--Matching List Controller-->
         <scene sceneID="MyM-Ir-yCd">
             <objects>
-                <viewController id="jDR-Qg-iLb" sceneMemberID="viewController">
+                <viewController id="jDR-Qg-iLb" customClass="MatchingListController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z74-zj-Hc4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="2217" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Maching End Controller-->
         <scene sceneID="czm-2R-3GZ">
             <objects>
-                <viewController id="P3F-2Y-ILY" sceneMemberID="viewController">
+                <viewController id="P3F-2Y-ILY" customClass="MachingEndController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yju-qj-ZrF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="2989.5999999999999" y="489.80509745127438"/>
         </scene>
-        <!--View Controller-->
+        <!--Pay End Controller-->
         <scene sceneID="JLu-1E-QKp">
             <objects>
-                <viewController id="uR2-t1-qr0" sceneMemberID="viewController">
+                <viewController id="uR2-t1-qr0" customClass="PayEndController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixp-VA-Sbh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="3770" y="490"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Edit Controller-->
         <scene sceneID="FtK-dX-BIJ">
             <objects>
-                <viewController id="LlR-AT-L0n" sceneMemberID="viewController">
+                <viewController id="LlR-AT-L0n" customClass="ProfileEditController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NOm-Pc-5rs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,10 +353,10 @@
             </objects>
             <point key="canvasLocation" x="2991" y="-273"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Edit Controller-->
         <scene sceneID="9Pq-Dg-NvZ">
             <objects>
-                <viewController id="ut1-te-jOB" sceneMemberID="viewController">
+                <viewController id="ut1-te-jOB" customClass="ProfileEditController" customModule="Taxi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3VW-OL-Vnx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

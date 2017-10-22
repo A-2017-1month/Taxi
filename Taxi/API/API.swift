@@ -8,6 +8,6 @@
 import Gryphon
 final class API {
  static var baseURL: String {
-  return "ここにAPIのURLを入れる"
+  return "http://qiita.com/api/v2/schema"
 }
 }

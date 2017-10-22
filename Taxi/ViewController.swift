@@ -19,18 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
- 
-    @IBAction func profileEditScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "ProfileEditController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "profileedit") as! ProfileEditController
-        self.present(nextView, animated: true, completion: nil)
-    }
     
-    @IBAction func mapScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "MapController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "map") as! MapController
-        self.present(nextView, animated: true, completion: nil)
+    
+    
+    @IBOutlet weak var testlabel: UITextField!
+    @IBAction func signUp(_ sender: UIButton) {
+        testlabel.text = "red"
     }
 }
 

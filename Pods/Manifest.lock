@@ -1,0 +1,12 @@
+PODS:
+  - Gryphon (3.0.0)
+
+DEPENDENCIES:
+  - Gryphon (~> 3.0)
+
+SPEC CHECKSUMS:
+  Gryphon: 00d5988e3a3231ffd1f3c0c6efd8ec2d18646071
+
+PODFILE CHECKSUM: f1bb33aac70146706fdc2b6221fcb0859d0198c2
+
+COCOAPODS: 1.3.1

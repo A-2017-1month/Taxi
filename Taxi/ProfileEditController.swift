@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ProfileEditController: UIViewController {
     
@@ -20,7 +21,11 @@ class ProfileEditController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func editEnd(_ sender: UIButton) {
+    @IBOutlet weak var rideLocation: UITextView!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBAction func machingOnOff(_ sender: UISwitch) {
+    }
+    @IBAction func customEdit(_ sender: UIButton) {
     }
     
 }

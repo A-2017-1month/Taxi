@@ -1,5 +1,5 @@
 //
-//  MatchingListController.swift
+//  MatchingController.swift
 //  Taxi
 //
 //  Created by Katsuya Taguchi on 2017/10/22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MatchingListController: UIViewController {
+class MatchingController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,10 @@ class MatchingListController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showProfile(_ sender: UIButton) {
+    @IBAction func backPage(_ sender: UIButton) {
     }
-    @IBAction func matching(_ sender: UIButton) {
+    @IBAction func matchingDo(_ sender: UIButton) {
+    }
+    @IBAction func matchingNot(_ sender: UIButton) {
     }
 }

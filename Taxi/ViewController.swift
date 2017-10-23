@@ -19,13 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func signIn(_ sender: UIButton) {
     }
-    
+
     @IBOutlet weak var testlabel: UITextField!
     @IBAction func signUp(_ sender: UIButton) {
-        
-    }
+  }
 }
 

@@ -1,3 +1,4 @@
+import Foundation
 import Alamofire
 import Gryphon
 
@@ -5,7 +6,7 @@ extension API {
   final class Users: Requestable {
 
    static var baseURL: String {
-    return "http://qiita.com/api/v2/schema"
+    return "URLを設定する"
   }
 
   enum Router: String {
@@ -25,23 +26,16 @@ extension API {
   }
 
   // Returns message(String) from server or error reason(Error).
-  class func find(id: Int) -> Task<[String : AnyObject], Error> {
+  class func find(id: String) -> Task <[String : AnyObject], Error> {
     router = .find
-    param = id as! String
+    param = id
 
     let task = Task<[String : AnyObject], Error> { result in
 
       Alamofire.request(path, method: .get, encoding: JSONEncoding.default)
       .responseJSON(completionHandler: { response in
-
-        // Object mapping in your favorite way.
-        guard let users = (response.result.value as! [AnyObject])[0] as? [String : AnyObject] else {
-
-          let reason = response.result.description as AnyObject
-
-          return result(APIResult<[String : AnyObject]>.error(ResponseError.unexceptedResponse(reason)))
-        }
-        result(APIResult<[String : AnyObject]>.response(users))
+        let user = response.result.value as! [String : AnyObject]
+        result(APIResult< [String : AnyObject]>.response(user))
         })
     }
     return task

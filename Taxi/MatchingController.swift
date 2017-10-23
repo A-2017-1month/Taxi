@@ -34,7 +34,7 @@ class MatchingController: UIViewController {
     @IBAction func backPage(_ sender: UIButton) {
     }
     @IBAction func matchingDo(_ sender: UIButton) {
-        ud.set(list[current], forKey: "rsultKey")
+        ud.set(list[current], forKey: "resultKey")
     }
     @IBAction func matchingNot(_ sender: UIButton) {
         current += 1

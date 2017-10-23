@@ -15,7 +15,7 @@ class MachingEndController: UIViewController {
     @IBOutlet weak var AnnounceLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = ud.object(forKey: "rsultKey") as! [String : String]
+        let user = ud.object(forKey: "resultKey") as! [String : String]
         AnnounceLabel.text = (user["name"]! + "さんはここにいます") as! String
     }
 

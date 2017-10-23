@@ -342,6 +342,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="設定完了"/>
                                 <connections>
+                                    <action selector="customEnd:" destination="ut1-te-jOB" eventType="touchUpInside" id="eJy-mr-HXr"/>
                                     <action selector="editEnd:" destination="ut1-te-jOB" eventType="touchUpInside" id="A6h-lE-hoh"/>
                                     <segue destination="Sbt-hD-YNN" kind="show" id="LJI-YF-2DI"/>
                                 </connections>
@@ -356,6 +357,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fu9-Ta-8qD">
                                 <rect key="frame" x="301" y="482" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="machingOnOff:" destination="ut1-te-jOB" eventType="valueChanged" id="Tbu-iy-A7P"/>
+                                </connections>
                             </switch>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PoW-ze-PZm">
                                 <rect key="frame" x="0.0" y="228" width="375" height="246"/>
@@ -365,12 +369,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="V2V-J6-2Rb"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="PoW-ze-PZm" id="pto-hk-qrk"/>
+                        <outlet property="rideLocation" destination="QMy-ac-Sgj" id="vSk-86-80b"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="-352.17391304347831"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qei-Lu-GYd"/>
+        <segue reference="LJI-YF-2DI"/>
     </inferredMetricsTieBreakers>
 </document>

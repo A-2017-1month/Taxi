@@ -13,6 +13,7 @@ class MachingEndController: UIViewController {
 
     let ud = UserDefaults.standard
     @IBOutlet weak var AnnounceLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let user = ud.object(forKey: "resultKey") as! [String : String]

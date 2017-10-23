@@ -14,7 +14,6 @@
 		1F2FB4931F9C48C800870FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2FB4921F9C48C800870FC9 /* Assets.xcassets */; };
 		1F2FB4961F9C48C800870FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2FB4941F9C48C800870FC9 /* LaunchScreen.storyboard */; };
 		1F2FB4A11F9C48C800870FC9 /* TaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2FB4A01F9C48C800870FC9 /* TaxiUITests.swift */; };
-		1FAF63B41F9C838C003D176D /* API in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF63B31F9C838C003D176D /* API */; };
 		83C62631E3FA0F013ACF5098 /* Pods_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */; };
 		D47C37C21F9C916300E6F3EC /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C11F9C916300E6F3EC /* ProfileEditController.swift */; };
 		D47C37C41F9C92F000E6F3EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C31F9C92F000E6F3EC /* MapController.swift */; };
@@ -47,7 +46,6 @@
 		1F2FB49C1F9C48C800870FC9 /* TaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2FB4A01F9C48C800870FC9 /* TaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiUITests.swift; sourceTree = "<group>"; };
 		1F2FB4A21F9C48C800870FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FAF63B31F9C838C003D176D /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; path = API; sourceTree = "<group>"; };
 		279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56226B6EB5ABF5C11CC49A23 /* Pods-Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxi/Pods-Taxi.release.xcconfig"; sourceTree = "<group>"; };
 		8D276F13EBFFBDD2D884C229 /* Pods-TaxiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiUITests/Pods-TaxiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */,
 				D47C37C91F9C93F100E6F3EC /* PayEndController.swift */,
 				1F2FB48F1F9C48C800870FC9 /* Main.storyboard */,
-				1FAF63B31F9C838C003D176D /* API */,
 				1F2FB4921F9C48C800870FC9 /* Assets.xcassets */,
 				1F2FB4941F9C48C800870FC9 /* LaunchScreen.storyboard */,
 				1F2FB4971F9C48C800870FC9 /* Info.plist */,
@@ -236,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2FB4961F9C48C800870FC9 /* LaunchScreen.storyboard in Resources */,
-				1FAF63B41F9C838C003D176D /* API in Resources */,
 				1F2FB4931F9C48C800870FC9 /* Assets.xcassets in Resources */,
 				1F2FB4911F9C48C800870FC9 /* Main.storyboard in Resources */,
 			);

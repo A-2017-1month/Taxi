@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Gryphon (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Gryphon (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Gryphon: 00d5988e3a3231ffd1f3c0c6efd8ec2d18646071
+
+PODFILE CHECKSUM: bf49e0e3fab49cd37c10fc32c25761e3d6b10945
+
+COCOAPODS: 1.3.1

@@ -81,6 +81,7 @@ extension API {
       Alamofire.request(path, method: .get, parameters: params, encoding: JSONEncoding.default)
       .responseJSON(completionHandler: { response in
         let user = response.result.value as! [String : AnyObject]
+        let auth = user["auth"]
         result(APIResult<String>.response(user["auth"] as! String))
         })
     }
@@ -99,8 +100,8 @@ extension API {
     let task = Task<[String : AnyObject], Error> { result in
       Alamofire.request(path, method: .get, parameters: params, encoding: JSONEncoding.default)
       .responseJSON(completionHandler: { response in
-        let user = response.result.value as! [String : AnyObject]
-        result(APIResult<[String : AnyObject]>.response(user))
+        let users = response.result.value as! [String : AnyObject]
+        result(APIResult<[String : AnyObject]>.response(users))
         })
     }
     return task

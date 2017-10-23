@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var testlabel: UITextField!
     @IBAction func signUp(_ sender: UIButton) {
-        testlabel.text = "red"
+        
     }
 }
 

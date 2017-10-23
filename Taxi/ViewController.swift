@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let ud = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let account : [String : String] = [
+            "name":"山田太郎",
+            "email": "yamada@ate.tm",
+            "gender": "男",
+            "password": "hoge",
+            "account_name": "hoge",
+            "different_ok?": "true"
+        ]
+        ud.set(account, forKey: "accountKey")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,7 +30,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+
     @IBOutlet weak var idTextform: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBAction func signIn(_ sender: UIButton) {

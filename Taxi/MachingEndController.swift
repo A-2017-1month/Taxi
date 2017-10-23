@@ -10,17 +10,20 @@ import UIKit
 import MapKit
 
 class MachingEndController: UIViewController {
-    
+
+    let ud = UserDefaults.standard
+    @IBOutlet weak var AnnounceLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let user = ud.object(forKey: "rsultKey") as! [String : String]
+        AnnounceLabel.text = (user["name"]! + "さんはここにいます") as! String
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBOutlet weak var matchingUserName: UILabel!
     @IBOutlet weak var mapView: MKMapView!
 }

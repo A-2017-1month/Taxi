@@ -78,10 +78,29 @@ extension API {
     ]
 
     let task = Task<String, Error> { result in
-      Alamofire.request(path, method: .get, encoding: JSONEncoding.default)
+      Alamofire.request(path, method: .get, parameters: params, encoding: JSONEncoding.default)
       .responseJSON(completionHandler: { response in
         let user = response.result.value as! [String : AnyObject]
-        result(APIResult<String>.response(user["auth"]))
+        result(APIResult<String>.response(user["auth"] as! String))
+        })
+    }
+    return task
+  }
+
+  class func get_match(id: String, time: String, longitude: String, latitude: String) -> Task <[String : AnyObject], Error> {
+    router = .get_match
+    value = id
+    let params : Parameters = [
+    "time": time,
+    "longitude": longitude,
+    "latitude": latitude
+    ]
+
+    let task = Task<[String : AnyObject], Error> { result in
+      Alamofire.request(path, method: .get, parameters: params, encoding: JSONEncoding.default)
+      .responseJSON(completionHandler: { response in
+        let user = response.result.value as! [String : AnyObject]
+        result(APIResult<[String : AnyObject]>.response(user))
         })
     }
     return task

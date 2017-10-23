@@ -10,6 +10,7 @@ class DummyUser {
   "longitude": "136.884556",
   "latitude": "35.17213"],
 
+
   ["name": "木村和子",
   "email": "kimura@ate.tm",
   "gender": "女",

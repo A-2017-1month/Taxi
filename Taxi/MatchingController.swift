@@ -9,21 +9,32 @@
 import UIKit
 
 class MatchingController: UIViewController {
-    
+
+    @IBOutlet weak var CommentLabel: UITextField!
+    @IBOutlet weak var GenderLabel: UILabel!
+    @IBOutlet weak var NameLabel: UILabel!
+    let ud = UserDefaults.standard
+    var current = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        CommentLabel.text = DummyUser.users[current]["comment"]
+        GenderLabel.text = DummyUser.users[current]["gender"]
+        NameLabel.text = DummyUser.users[current]["name"]
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func backPage(_ sender: UIButton) {
     }
+
     @IBAction func matchingDo(_ sender: UIButton) {
+        ud.set(DummyUser.users[current], forKey: "resultKey")
     }
+
     @IBAction func matchingNot(_ sender: UIButton) {
+        current += 1
+        current %= 2
     }
 }

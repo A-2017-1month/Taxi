@@ -13,11 +13,17 @@ import CoreLocation
 class MapController: UIViewController {
   var mylocationManager: CLLocationManager!
   let ud = UserDefaults.standard
+  let myMapView = MKMapView()
+  let myLocationManager = CLLocationManager()
+  @IBOutlet weak var mapView: MKMapView!
+  @IBOutlet weak var rideLocation: UITextField!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     mylocationManager = CLLocationManager() // インスタンスの生成
     mylocationManager.delegate = self  as! CLLocationManagerDelegate// CLLocationManagerDelegateプロトコルを実装するクラスを指定する
+    myMapView.frame = self.view.frame
+    self.view.addSubview(myMapView)
 
 }
 
@@ -28,14 +34,14 @@ override func didReceiveMemoryWarning() {
 
 @IBAction func editProfile(_ sender: UIButton) {
 }
-@IBOutlet weak var mapView: MKMapView!
-@IBOutlet weak var rideLocation: UITextField!
+
 @IBAction func selectTime(_ sender: UIDatePicker) {
 }
+
 @IBAction func customEnd(_ sender: UIButton) {
 
     let user1 : [String : String] = [
-    "name":"田中一郎",
+    "name": "田中一郎",
     "email": "tanaka@ate.tm",
     "gender": "男",
     "password": "hoge",
@@ -45,7 +51,7 @@ override func didReceiveMemoryWarning() {
     ]
 
     let user2 : [String : String] = [
-    "name":"木村和子",
+    "name": "木村和子",
     "email": "kimura@ate.tm",
     "gender": "女",
     "password": "hoge",
@@ -81,8 +87,20 @@ extension MapController: CLLocationManagerDelegate {
             break
             case .authorizedWhenInUse:
             print("起動時のみ、位置情報の取得が許可されています。")
-            // 位置情報取得の開始処理
+            mylocationManager.startUpdatingLocation()
             break
         }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let myLocation = locations.last! as CLLocation
+        //Pinに表示するためにはCLLocationCoordinate2Dに変換してあげる必要がある
+        let currentLocation = myLocation.coordinate
+        //ピンの生成と配置
+        let pin = MKPointAnnotation()
+        pin.coordinate = currentLocation
+        pin.title = "現在地"
+        self.myMapView.addAnnotation(pin)
     }
 }

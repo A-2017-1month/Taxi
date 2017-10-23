@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class MachingEndController: UIViewController {
     
@@ -20,12 +21,6 @@ class MachingEndController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var IDForm: UITextField!
-    
-    @IBOutlet weak var PasswordForm: UITextField!
-    
-    
-    @IBAction func SignInButton(_ sender: UIButton) {
-        
-    }
+    @IBOutlet weak var matchingUserName: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
 }

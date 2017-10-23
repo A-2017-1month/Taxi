@@ -20,11 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBOutlet weak var idTextform: UITextField!
+    @IBOutlet weak var passWord: UITextField!
     @IBAction func signIn(_ sender: UIButton) {
     }
-
-    @IBOutlet weak var testlabel: UITextField!
     @IBAction func signUp(_ sender: UIButton) {
-  }
+    }
 }
 

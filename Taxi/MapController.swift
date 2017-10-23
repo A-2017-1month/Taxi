@@ -20,9 +20,6 @@ class MapController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func matchingListScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "MatchingListController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "matchinglist") as! MatchingListController
-        self.present(nextView, animated: true, completion: nil)
+    @IBAction func customEnd(_ sender: UIButton) {
     }
 }

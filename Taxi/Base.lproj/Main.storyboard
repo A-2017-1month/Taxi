@@ -21,6 +21,10 @@
                                 <rect key="frame" x="170" y="341" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SIgin"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ld-v4-AIq"/>
+                                    <segue destination="Sbt-hD-YNN" kind="show" id="qei-Lu-GYd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5c-ru-SXY">
                                 <rect key="frame" x="139" y="239" width="97" height="30"/>
@@ -95,7 +99,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="この条件で探す"/>
                                 <connections>
+                                    <action selector="customEnd:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="uLO-VS-dlg"/>
                                     <action selector="matchingListScreenTransition:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="2R8-hv-JK6"/>
+                                    <segue destination="jDR-Qg-iLb" kind="show" id="YRZ-g6-Ogs"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7q-MZ-3sv">
@@ -445,7 +451,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="設定完了"/>
                                 <connections>
-                                    <action selector="mapScreenTransition:" destination="ut1-te-jOB" eventType="touchUpInside" id="fuA-nk-Wt1"/>
+                                    <action selector="editEnd:" destination="ut1-te-jOB" eventType="touchUpInside" id="A6h-lE-hoh"/>
+                                    <segue destination="Sbt-hD-YNN" kind="show" id="LJI-YF-2DI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -458,4 +465,7 @@
             <point key="canvasLocation" x="820" y="133"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LJI-YF-2DI"/>
+    </inferredMetricsTieBreakers>
 </document>

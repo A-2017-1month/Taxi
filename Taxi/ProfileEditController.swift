@@ -20,11 +20,7 @@ class ProfileEditController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func mapScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "MapController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "map") as! MapController
-        self.present(nextView, animated: true, completion: nil)
-
+    @IBAction func editEnd(_ sender: UIButton) {
     }
     
 }

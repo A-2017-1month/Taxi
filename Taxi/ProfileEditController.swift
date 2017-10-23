@@ -22,14 +22,10 @@ class ProfileEditController: UIViewController {
     }
     
     @IBOutlet weak var rideLocation: UITextView!
-    
     @IBOutlet weak var mapView: MKMapView!
     @IBAction func machingOnOff(_ sender: UISwitch) {
     }
-    @IBAction func customEnd(_ sender: UIButton) {
+    @IBAction func customEdit(_ sender: UIButton) {
     }
-    @IBAction func editEnd(_ sender: UIButton) {
-    }
-    @IBAction func backPage(_ sender: UIButton) {
-    }
+    
 }

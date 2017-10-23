@@ -36,7 +36,7 @@ extension API {
       Alamofire.request(path, method: .get, encoding: JSONEncoding.default)
       .responseJSON(completionHandler: { response in
         let user = response.result.value as! [String : AnyObject]
-        result(APIResult< [String : AnyObject]>.response(user))
+        result(APIResult<[String : AnyObject]>.response(user))
         })
     }
     return task

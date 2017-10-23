@@ -20,14 +20,8 @@ class MatchingListController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func payEndScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "PayEndController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "") as! ProfileEditController
-        self.present(nextView, animated: true, completion: nil)
+    @IBAction func showProfile(_ sender: UIButton) {
     }
-    @IBAction func profileScreenTransition(_ sender: UIButton) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "ProfileEditController", bundle: nil)
-        let nextView = storyboard.instantiateViewController(withIdentifier: "profile") as! ProfileEditController
-        self.present(nextView, animated: true, completion: nil)
+    @IBAction func matching(_ sender: UIButton) {
     }
 }

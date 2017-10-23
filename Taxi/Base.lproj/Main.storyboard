@@ -100,7 +100,6 @@
                                 <state key="normal" title="この条件で探す"/>
                                 <connections>
                                     <action selector="customEnd:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="uLO-VS-dlg"/>
-                                    <action selector="matchingListScreenTransition:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="2R8-hv-JK6"/>
                                     <segue destination="jDR-Qg-iLb" kind="show" id="YRZ-g6-Ogs"/>
                                 </connections>
                             </button>
@@ -145,7 +144,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="乗る"/>
                                 <connections>
-                                    <action selector="payEndScreenTransition:" destination="jDR-Qg-iLb" eventType="touchUpInside" id="RKU-KA-dsB"/>
+                                    <action selector="matching:" destination="jDR-Qg-iLb" eventType="touchUpInside" id="CvP-Yf-ibJ"/>
+                                    <segue destination="P3F-2Y-ILY" kind="show" id="lKN-jJ-7JN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-nI-Gdi">
@@ -208,7 +208,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="画像"/>
                                 <connections>
-                                    <action selector="profileScreenTransition:" destination="jDR-Qg-iLb" eventType="touchUpInside" id="VvE-Gl-H9t"/>
+                                    <action selector="showProfile:" destination="jDR-Qg-iLb" eventType="touchUpInside" id="MML-PR-IZ3"/>
+                                    <segue destination="LlR-AT-L0n" kind="show" id="Owd-jt-vG4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -466,6 +467,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LJI-YF-2DI"/>
+        <segue reference="qei-Lu-GYd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -321,6 +321,8 @@
                         <viewLayoutGuide key="safeArea" id="V2V-J6-2Rb"/>
                     </view>
                     <connections>
+                        <outlet property="AddressLabel" destination="QMy-ac-Sgj" id="RrR-Ya-LcR"/>
+                        <outlet property="NameLabel" destination="86Z-eM-zu3" id="2dn-Kt-SvS"/>
                         <outlet property="mapView" destination="PoW-ze-PZm" id="pto-hk-qrk"/>
                         <outlet property="rideLocation" destination="QMy-ac-Sgj" id="vSk-86-80b"/>
                     </connections>
@@ -332,6 +334,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VEn-g7-usY"/>
-        <segue reference="c02-wA-g8f"/>
+        <segue reference="LJI-YF-2DI"/>
     </inferredMetricsTieBreakers>
 </document>

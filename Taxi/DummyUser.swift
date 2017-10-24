@@ -50,6 +50,7 @@ class DummyUser {
   "different_ok?": "true",
   "longitude": "136.88467",
   "latitude": "35.171888",
+  "address": "愛知県名古屋市西区則武新町４丁目１−４４",
   "end_lonigitude": "136.875851",
   "end_latitude": "35.181873"
   ]

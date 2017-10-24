@@ -67,14 +67,11 @@ extension MapController: CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
         let myLocation = locations.last! as CLLocation
-        //Pinに表示するためにはCLLocationCoordinate2Dに変換してあげる必要がある
-        let currentLocation = myLocation.coordinate
-        //ピンの生成と配置
-        let pin = MKPointAnnotation()
-        pin.coordinate = currentLocation
-        pin.title = "現在地"
-        self.myMapView.addAnnotation(pin)
+        let coordinate = myLocation.coordinate
+        let span = MKCoordinateSpanMake(0.005, 0.005)
+        let region = MKCoordinateRegionMake(coordinate, span)
+        self.mapView.setRegion(region, animated:true)
+
     }
 }

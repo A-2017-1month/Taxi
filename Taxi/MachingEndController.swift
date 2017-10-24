@@ -19,7 +19,7 @@ class MachingEndController: UIViewController {
     @IBOutlet weak var AnnounceLabel: UILabel!
     @IBOutlet weak var matchingUserName: UILabel!
     @IBOutlet weak var mapView: MKMapView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         user = ud.object(forKey: "resultKey") as! [String : String]

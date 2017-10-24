@@ -27,7 +27,14 @@ class MapController: UIViewController {
     let region = MKCoordinateRegionMake(coordinate, span)
     self.mapView.setRegion(region, animated:true)
 
-    let annotation = MKPointAnnotation()
+    var annotation = MKPointAnnotation()
+    longitude = Double(user["longitude"] as! String)
+    latitude  = Double(user["latitude"] as! String)
+    annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+    annotation.title = "現在地" as! String
+    self.mapView.addAnnotation(annotation)
+
+    annotation = MKPointAnnotation()
     longitude = Double(DummyStation.stations[0]["longitude"] as! String)
     latitude  = Double(DummyStation.stations[0]["latitude"] as! String)
     annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
@@ -35,19 +42,19 @@ class MapController: UIViewController {
     annotation.subtitle = DummyStation.stations[0]["address"]
     self.mapView.addAnnotation(annotation)
     rideLocation.text = DummyStation.stations[0]["address"]
-    }
+  }
 
-override func didReceiveMemoryWarning() {
+  override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
-}
+  }
 
-@IBAction func editProfile(_ sender: UIButton) {
-}
+  @IBAction func editProfile(_ sender: UIButton) {
+  }
 
-@IBAction func selectTime(_ sender: UIDatePicker) {
-}
+  @IBAction func selectTime(_ sender: UIDatePicker) {
+  }
 
-@IBAction func customEnd(_ sender: UIButton) {
-}
+  @IBAction func customEnd(_ sender: UIButton) {
+  }
 }

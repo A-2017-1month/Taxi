@@ -31,10 +31,18 @@ class MachingEndController: UIViewController {
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated:true)
 
-        let annotation = MKPointAnnotation()
+        var annotation = MKPointAnnotation()
+        longitude = Double(user["longitude"] as! String)
+        latitude  = Double(user["latitude"] as! String)
+        annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+        annotation.title = "現在地" as! String
+        self.mapView.addAnnotation(annotation)
+
+        annotation = MKPointAnnotation()
         longitude = Double(match_user["longitude"] as! String)
         latitude  = Double(match_user["latitude"] as! String)
         annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
+        annotation.title = (match_user["name"]! + "さんの現在地") as! String
         self.mapView.addAnnotation(annotation)
     }
 

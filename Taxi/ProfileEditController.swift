@@ -22,6 +22,23 @@ class ProfileEditController: UIViewController {
         NameLabel.text = user["name"] as! String
     }
 
+    @IBAction func pressMap(_ sender: UILongPressGestureRecognizer) {
+        //マップビュー内のタップした位置を取得する。
+        let location:CGPoint = sender.location(in: mapView)
+        if (sender.state == UIGestureRecognizerState.ended){
+            //タップした位置を緯度、経度の座標に変換する。
+            let mapPoint:CLLocationCoordinate2D = mapView.convert(location, toCoordinateFrom: mapView)
+            //ピンを作成してマップビューに登録する。
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2DMake(mapPoint.latitude, mapPoint.longitude)
+            annotation.title = "ピン"
+            annotation.subtitle = "\(annotation.coordinate.latitude), \(annotation.coordinate.longitude)"
+            mapView.addAnnotation(annotation)
+
+        }
+
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

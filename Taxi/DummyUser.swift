@@ -7,8 +7,8 @@ class DummyUser {
   "account_name": "hoge",
   "different_ok?": "true",
   "comment": "早く帰りたいです",
-  "longitude": "136.884556",
-  "latitude": "35.17213"],
+  "longitude": "139.7753270",
+  "latitude": "35.70206920"],
 
 
   ["name": "木村和子",
@@ -18,7 +18,7 @@ class DummyUser {
   "account_name": "hoge",
   "different_ok?": "true",
   "comment": "少しの時間なら待てます",
-  "longitude": "136.884556",
-  "latitude": "35.17213"]
+  "longitude": "139.7753270",
+  "latitude": "35.70206920"]
   ]
 }

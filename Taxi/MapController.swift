@@ -75,12 +75,12 @@ extension MapController: CLLocationManagerDelegate {
         self.mapView.setRegion(region, animated:true)
 
         let annotation = MKPointAnnotation()
-        let longitude = Double(DummyStation.stations[1]["longitude"] as! String)
-        let latitude  = Double(DummyStation.stations[1]["latitude"] as! String)
+        let longitude = Double(DummyStation.stations[0]["longitude"] as! String)
+        let latitude  = Double(DummyStation.stations[0]["latitude"] as! String)
         annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
-        annotation.title = DummyStation.stations[1]["name"]
-        annotation.subtitle = DummyStation.stations[1]["address"]
+        annotation.title = DummyStation.stations[0]["name"]
+        annotation.subtitle = DummyStation.stations[0]["address"]
         self.mapView.addAnnotation(annotation)
-        rideLocation.text = DummyStation.stations[1]["address"]
+        rideLocation.text = DummyStation.stations[0]["address"]
     }
 }

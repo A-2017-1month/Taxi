@@ -11,7 +11,6 @@ import MapKit
 import CoreLocation
 
 class MapController: UIViewController {
-  var mylocationManager: CLLocationManager!
   let ud = UserDefaults.standard
   let myMapView = MKMapView()
   let myLocationManager = CLLocationManager()
@@ -20,8 +19,6 @@ class MapController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    mylocationManager = CLLocationManager() // インスタンスの生成
-    mylocationManager.delegate = self  as! CLLocationManagerDelegate// CLLocationManagerDelegateプロトコルを実装するクラスを指定する
     let user = ud.object(forKey: "accountKey") as! [String : String]
     var longitude = Double(user["longitude"] as! String)
     var latitude  = Double(user["latitude"] as! String)
@@ -38,7 +35,7 @@ class MapController: UIViewController {
     annotation.subtitle = DummyStation.stations[0]["address"]
     self.mapView.addAnnotation(annotation)
     rideLocation.text = DummyStation.stations[0]["address"]
-}
+    }
 
 override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()

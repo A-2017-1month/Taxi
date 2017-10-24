@@ -12,13 +12,14 @@ import MapKit
 class ProfileEditController: UIViewController {
     @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var AddressLabel: UITextView!
-    
+
     let ud = UserDefaults.standard
     var user : [String : String] = [:]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         user = ud.object(forKey: "accountKey") as! [String : String]
+        NameLabel.text = user["name"] as! String
     }
 
     override func didReceiveMemoryWarning() {

@@ -268,7 +268,7 @@
                                     <navigationItem title="プロフィール編集" id="iPW-oJ-jaJ"/>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="乗車場所" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="clf-ht-0S9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="降車場所" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="clf-ht-0S9">
                                 <rect key="frame" x="24" y="124" width="295" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

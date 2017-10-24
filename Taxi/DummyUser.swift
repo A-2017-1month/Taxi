@@ -49,6 +49,8 @@ class DummyUser {
   "account_name": "hoge",
   "different_ok?": "true",
   "longitude": "136.88467",
-  "latitude": "35.171888"
+  "latitude": "35.171888",
+  "end_lonigitude": "136.875851",
+  "end_latitude": "35.181873"
   ]
 }

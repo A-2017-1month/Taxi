@@ -39,8 +39,8 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                 <state key="normal" image="siign-in.png"/>
                                 <connections>
-                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ld-v4-AIq"/>
-                                    <segue destination="Sbt-hD-YNN" kind="show" id="qei-Lu-GYd"/>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9x-kj-PHH"/>
+                                    <segue destination="Sbt-hD-YNN" kind="show" id="8xA-qw-KSw"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5c-ru-SXY">
@@ -396,7 +396,7 @@
         <image name="siign-in.png" width="200" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VEn-g7-usY"/>
-        <segue reference="LJI-YF-2DI"/>
+        <segue reference="Roe-jB-r5X"/>
+        <segue reference="8xA-qw-KSw"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,7 +17,6 @@ class MatchingController: UIViewController {
     var current = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        CommentLabel.text = DummyUser.users[current]["comment"]
         GenderLabel.text = DummyUser.users[current]["gender"]
         NameLabel.text = DummyUser.users[current]["name"]
     }

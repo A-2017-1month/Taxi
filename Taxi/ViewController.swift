@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let ud = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
+        ud.set(DummyUser.account,forKey: "accountKey")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var idTextform: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBAction func signIn(_ sender: UIButton) {
-        ud.set(DummyUser.account,forKey: "accountKey")
+        
     }
     @IBAction func signUp(_ sender: UIButton) {
     }

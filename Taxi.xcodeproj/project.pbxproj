@@ -21,6 +21,14 @@
 		D47C37C41F9C92F000E6F3EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C31F9C92F000E6F3EC /* MapController.swift */; };
 		D47C37C81F9C93D100E6F3EC /* MachingEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */; };
 		D47C37CA1F9C93F100E6F3EC /* PayEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C91F9C93F100E6F3EC /* PayEndController.swift */; };
+		D49A60981F9EC3F0002EDBD7 /* sign-up.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60971F9EC3EF002EDBD7 /* sign-up.png */; };
+		D49A609D1F9EC5BD002EDBD7 /* siign-in.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A609C1F9EC5BD002EDBD7 /* siign-in.png */; };
+		D49A60A11F9ECB7D002EDBD7 /* edit-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A609F1F9ECB7D002EDBD7 /* edit-end.png */; };
+		D49A60A31F9ED003002EDBD7 /* matching.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A21F9ED001002EDBD7 /* matching.png */; };
+		D49A60A61F9ED395002EDBD7 /* matching-do.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A41F9ED395002EDBD7 /* matching-do.png */; };
+		D49A60A71F9ED395002EDBD7 /* matching-not.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A51F9ED395002EDBD7 /* matching-not.png */; };
+		D49A60AB1F9ED594002EDBD7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A91F9ED594002EDBD7 /* back.png */; };
+		D49A60AD1F9ED6F8002EDBD7 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60AC1F9ED6F4002EDBD7 /* profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,14 @@
 		D47C37C31F9C92F000E6F3EC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachingEndController.swift; sourceTree = "<group>"; };
 		D47C37C91F9C93F100E6F3EC /* PayEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayEndController.swift; sourceTree = "<group>"; };
+		D49A60971F9EC3EF002EDBD7 /* sign-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sign-up.png"; path = "img/sign-up.png"; sourceTree = SOURCE_ROOT; };
+		D49A609C1F9EC5BD002EDBD7 /* siign-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "siign-in.png"; path = "img/siign-in.png"; sourceTree = SOURCE_ROOT; };
+		D49A609F1F9ECB7D002EDBD7 /* edit-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit-end.png"; path = "img/edit-end.png"; sourceTree = SOURCE_ROOT; };
+		D49A60A21F9ED001002EDBD7 /* matching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = matching.png; path = img/matching.png; sourceTree = SOURCE_ROOT; };
+		D49A60A41F9ED395002EDBD7 /* matching-do.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matching-do.png"; path = "img/matching-do.png"; sourceTree = SOURCE_ROOT; };
+		D49A60A51F9ED395002EDBD7 /* matching-not.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matching-not.png"; path = "img/matching-not.png"; sourceTree = SOURCE_ROOT; };
+		D49A60A91F9ED594002EDBD7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = img/back.png; sourceTree = SOURCE_ROOT; };
+		D49A60AC1F9ED6F4002EDBD7 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = img/profile.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +129,7 @@
 				1F2FB4921F9C48C800870FC9 /* Assets.xcassets */,
 				1F2FB4941F9C48C800870FC9 /* LaunchScreen.storyboard */,
 				1F2FB4971F9C48C800870FC9 /* Info.plist */,
+				D4E1E77C1F9EBD9400269912 /* img */,
 			);
 			path = Taxi;
 			sourceTree = "<group>";
@@ -124,6 +141,21 @@
 				1F2FB4A21F9C48C800870FC9 /* Info.plist */,
 			);
 			path = TaxiUITests;
+			sourceTree = "<group>";
+		};
+		D4E1E77C1F9EBD9400269912 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D49A60AC1F9ED6F4002EDBD7 /* profile.png */,
+				D49A60A91F9ED594002EDBD7 /* back.png */,
+				D49A60A41F9ED395002EDBD7 /* matching-do.png */,
+				D49A60A51F9ED395002EDBD7 /* matching-not.png */,
+				D49A60A21F9ED001002EDBD7 /* matching.png */,
+				D49A609F1F9ECB7D002EDBD7 /* edit-end.png */,
+				D49A609C1F9EC5BD002EDBD7 /* siign-in.png */,
+				D49A60971F9EC3EF002EDBD7 /* sign-up.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 		DC73127055E9DFB24D172C1A /* Frameworks */ = {
@@ -237,7 +269,15 @@
 			files = (
 				1F2FB4961F9C48C800870FC9 /* LaunchScreen.storyboard in Resources */,
 				1F2FB4931F9C48C800870FC9 /* Assets.xcassets in Resources */,
+				D49A609D1F9EC5BD002EDBD7 /* siign-in.png in Resources */,
+				D49A60A71F9ED395002EDBD7 /* matching-not.png in Resources */,
+				D49A60A11F9ECB7D002EDBD7 /* edit-end.png in Resources */,
+				D49A60A31F9ED003002EDBD7 /* matching.png in Resources */,
+				D49A60AB1F9ED594002EDBD7 /* back.png in Resources */,
 				1F2FB4911F9C48C800870FC9 /* Main.storyboard in Resources */,
+				D49A60AD1F9ED6F8002EDBD7 /* profile.png in Resources */,
+				D49A60A61F9ED395002EDBD7 /* matching-do.png in Resources */,
+				D49A60981F9EC3F0002EDBD7 /* sign-up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Taxi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -539,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Taxi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;

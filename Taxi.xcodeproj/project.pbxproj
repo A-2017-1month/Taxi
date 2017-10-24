@@ -30,6 +30,7 @@
 		D49A60A71F9ED395002EDBD7 /* matching-not.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A51F9ED395002EDBD7 /* matching-not.png */; };
 		D49A60AB1F9ED594002EDBD7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60A91F9ED594002EDBD7 /* back.png */; };
 		D49A60AD1F9ED6F8002EDBD7 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60AC1F9ED6F4002EDBD7 /* profile.png */; };
+		D49A60AF1F9F8236002EDBD7 /* matching-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60AE1F9F8235002EDBD7 /* matching-end.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		D49A60A51F9ED395002EDBD7 /* matching-not.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matching-not.png"; path = "img/matching-not.png"; sourceTree = SOURCE_ROOT; };
 		D49A60A91F9ED594002EDBD7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = img/back.png; sourceTree = SOURCE_ROOT; };
 		D49A60AC1F9ED6F4002EDBD7 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = img/profile.png; sourceTree = SOURCE_ROOT; };
+		D49A60AE1F9F8235002EDBD7 /* matching-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matching-end.png"; path = "img/matching-end.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		D4E1E77C1F9EBD9400269912 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				D49A60AE1F9F8235002EDBD7 /* matching-end.png */,
 				D49A60AC1F9ED6F4002EDBD7 /* profile.png */,
 				D49A60A91F9ED594002EDBD7 /* back.png */,
 				D49A60A41F9ED395002EDBD7 /* matching-do.png */,
@@ -272,6 +275,7 @@
 			files = (
 				1F2FB4961F9C48C800870FC9 /* LaunchScreen.storyboard in Resources */,
 				1F2FB4931F9C48C800870FC9 /* Assets.xcassets in Resources */,
+				D49A60AF1F9F8236002EDBD7 /* matching-end.png in Resources */,
 				D49A609D1F9EC5BD002EDBD7 /* siign-in.png in Resources */,
 				D49A60A71F9ED395002EDBD7 /* matching-not.png in Resources */,
 				D49A60A11F9ECB7D002EDBD7 /* edit-end.png in Resources */,

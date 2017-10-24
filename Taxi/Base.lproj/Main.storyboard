@@ -93,15 +93,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db9-4K-XhV">
-                                <rect key="frame" x="4" y="579" width="366" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="matching.png"/>
-                                <connections>
-                                    <action selector="customEnd:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="uLO-VS-dlg"/>
-                                    <segue destination="jDR-Qg-iLb" kind="show" id="YRZ-g6-Ogs"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCc-pP-NXv">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -155,6 +146,15 @@
                                     <action selector="selectTime:" destination="Sbt-hD-YNN" eventType="valueChanged" id="crM-VR-BES"/>
                                 </connections>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db9-4K-XhV">
+                                <rect key="frame" x="87" y="584" width="200" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="matching.png"/>
+                                <connections>
+                                    <action selector="customEnd:" destination="Sbt-hD-YNN" eventType="touchUpInside" id="uLO-VS-dlg"/>
+                                    <segue destination="jDR-Qg-iLb" kind="show" id="YRZ-g6-Ogs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.88752523829999996" blue="0.21649359060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fLu-nZ-9WS"/>
@@ -256,12 +256,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-ri-vjo">
-                                <rect key="frame" x="0.0" y="267" width="375" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nameさんはここにいます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-Ys-jon">
-                                <rect key="frame" x="44" y="198" width="287" height="21"/>
+                                <rect key="frame" x="44" y="179" width="287" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -282,6 +278,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDa-5z-hQD">
+                                <rect key="frame" x="60" y="584" width="254" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="matching-end.png"/>
+                                <connections>
+                                    <segue destination="Sbt-hD-YNN" kind="show" id="y1t-AI-BNW"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-ri-vjo">
+                                <rect key="frame" x="0.0" y="249" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.88752523829999996" blue="0.21649359060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="t99-GK-fBu"/>
@@ -389,6 +397,7 @@
         <image name="back.png" width="62" height="60"/>
         <image name="edit-end.png" width="200" height="41"/>
         <image name="matching-do.png" width="200" height="41"/>
+        <image name="matching-end.png" width="200" height="41"/>
         <image name="matching-not.png" width="200" height="41"/>
         <image name="matching.png" width="200" height="41"/>
         <image name="profile.png" width="62" height="60"/>
@@ -396,7 +405,7 @@
         <image name="siign-in.png" width="200" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Roe-jB-r5X"/>
-        <segue reference="8xA-qw-KSw"/>
+        <segue reference="VEn-g7-usY"/>
+        <segue reference="y1t-AI-BNW"/>
     </inferredMetricsTieBreakers>
 </document>

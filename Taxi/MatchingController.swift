@@ -35,6 +35,7 @@ class MatchingController: UIViewController {
 
     @IBAction func matchingNot(_ sender: UIButton) {
         current += 1
-        current %= 2
+        current %= DummyUser.users.count
+        self.viewDidLoad()
     }
 }

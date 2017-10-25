@@ -177,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbc-KU-UmW">
-                                <rect key="frame" x="87" y="270" width="200" height="41"/>
+                                <rect key="frame" x="86" y="325" width="200" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="matching-do.png"/>
                                 <connections>
@@ -206,7 +206,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1p-De-pXY">
-                                <rect key="frame" x="88" y="357" width="200" height="41"/>
+                                <rect key="frame" x="87" y="412" width="200" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="matching-not.png"/>
                                 <connections>
@@ -234,6 +234,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="500円お得になります！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgd-iq-dJW">
+                                <rect key="frame" x="53" y="263" width="276" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.88752523829999996" blue="0.21649359060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tN0-lW-c8d"/>
@@ -242,6 +249,7 @@
                     <connections>
                         <outlet property="GenderLabel" destination="Cmz-9r-oaV" id="T5c-j5-p7A"/>
                         <outlet property="NameLabel" destination="gMt-jc-LdV" id="9my-E7-1r5"/>
+                        <outlet property="priceLabel" destination="dgd-iq-dJW" id="jJ4-Wt-Sb5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DP-VH-41S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,6 +473,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VEn-g7-usY"/>
-        <segue reference="QLr-2g-Oh7"/>
+        <segue reference="c02-wA-g8f"/>
     </inferredMetricsTieBreakers>
 </document>

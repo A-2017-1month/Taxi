@@ -28,6 +28,8 @@ class MatchingController: UIViewController {
     @IBAction func backPage(_ sender: UIButton) {
     }
 
+    @IBOutlet weak var priceLabel: UILabel!
+    
     @IBAction func matchingDo(_ sender: UIButton) {
         ud.set(DummyUser.users[current], forKey: "resultKey")
     }

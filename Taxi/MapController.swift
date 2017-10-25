@@ -23,7 +23,7 @@ class MapController: UIViewController {
     var longitude = Double(user["longitude"] as! String)
     var latitude  = Double(user["latitude"] as! String)
     let coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
-    let span = MKCoordinateSpanMake(0.005, 0.005)
+    let span = MKCoordinateSpanMake(0.003, 0.003)
     let region = MKCoordinateRegionMake(coordinate, span)
     self.mapView.setRegion(region, animated:true)
 

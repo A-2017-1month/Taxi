@@ -27,7 +27,7 @@ class MachingEndController: UIViewController {
         var longitude = Double(user["longitude"] as! String)
         var latitude  = Double(user["latitude"] as! String)
         let coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
-        let span = MKCoordinateSpanMake(0.005, 0.005)
+        let span = MKCoordinateSpanMake(0.002, 0.002)
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated:true)
 

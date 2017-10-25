@@ -464,6 +464,7 @@
         <image name="siign-in.png" width="200" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="GEO-bp-q3b"/>
         <segue reference="VEn-g7-usY"/>
         <segue reference="QLr-2g-Oh7"/>
     </inferredMetricsTieBreakers>

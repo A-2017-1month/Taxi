@@ -285,7 +285,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTK-b2-6Cl">
                                 <rect key="frame" x="87" y="584" width="200" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="matching-do.png"/>
+                                <state key="normal" image="matching-end.png"/>
                                 <connections>
                                     <segue destination="6bB-1C-Puz" kind="show" id="GEO-bp-q3b"/>
                                 </connections>
@@ -324,12 +324,14 @@
                                 <rect key="frame" x="0.0" y="262" width="375" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hX-xM-JnM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hX-xM-JnM">
                                 <rect key="frame" x="60" y="584" width="254" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="line-end.png"/>
                                 <connections>
                                     <action selector="backHome:" destination="6bB-1C-Puz" eventType="touchUpInside" id="tsM-13-hH6"/>
+                                    <segue destination="Sbt-hD-YNN" kind="show" id="QLr-2g-Oh7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最短経路を運転手に伝えましょう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-hA-Dfc">
@@ -452,7 +454,9 @@
     <resources>
         <image name="back.png" width="62" height="60"/>
         <image name="edit-end.png" width="200" height="41"/>
+        <image name="line-end.png" width="200" height="41"/>
         <image name="matching-do.png" width="200" height="41"/>
+        <image name="matching-end.png" width="200" height="41"/>
         <image name="matching-not.png" width="200" height="41"/>
         <image name="matching.png" width="200" height="41"/>
         <image name="profile.png" width="62" height="60"/>
@@ -461,6 +465,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VEn-g7-usY"/>
-        <segue reference="LJI-YF-2DI"/>
+        <segue reference="QLr-2g-Oh7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -87,7 +87,7 @@ class LineController: UIViewController, MKMapViewDelegate {
             polylineRenderer.strokeColor = (num == 0 ? UIColor.blue : UIColor.green)
             num += 1
             num %= 2
-            polylineRenderer.lineWidth = 1
+            polylineRenderer.lineWidth = 4
             return polylineRenderer
         }
         return nil

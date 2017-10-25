@@ -10,13 +10,16 @@ import UIKit
 import MapKit
 
 class LineController: UIViewController {
-    
+
     let ud = UserDefaults.standard
+    var user: [String : String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = ud.object(forKey: "accountKey") as! [String : String]
+
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -24,5 +27,5 @@ class LineController: UIViewController {
     @IBOutlet weak var mapLine: MKMapView!
     @IBAction func backHome(_ sender: UIButton) {
     }
-    
+
 }

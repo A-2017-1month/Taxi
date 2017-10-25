@@ -17,6 +17,7 @@
 		1F74C3211F9ED78900380795 /* DummyStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F74C3201F9ED78900380795 /* DummyStation.swift */; };
 		1F9583491F9DD62500829053 /* MatchingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9583481F9DD62500829053 /* MatchingController.swift */; };
 		1F95834B1F9E312A00829053 /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95834A1F9E312A00829053 /* DummyUser.swift */; };
+		1F99DE9D1FA0478100EB9387 /* LineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99DE9C1FA0478000EB9387 /* LineController.swift */; };
 		83C62631E3FA0F013ACF5098 /* Pods_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */; };
 		D47C37C21F9C916300E6F3EC /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C11F9C916300E6F3EC /* ProfileEditController.swift */; };
 		D47C37C41F9C92F000E6F3EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C31F9C92F000E6F3EC /* MapController.swift */; };
@@ -59,6 +60,7 @@
 		1F74C3201F9ED78900380795 /* DummyStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyStation.swift; sourceTree = "<group>"; };
 		1F9583481F9DD62500829053 /* MatchingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingController.swift; sourceTree = "<group>"; };
 		1F95834A1F9E312A00829053 /* DummyUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
+		1F99DE9C1FA0478000EB9387 /* LineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineController.swift; sourceTree = "<group>"; };
 		279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56226B6EB5ABF5C11CC49A23 /* Pods-Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxi/Pods-Taxi.release.xcconfig"; sourceTree = "<group>"; };
 		8D276F13EBFFBDD2D884C229 /* Pods-TaxiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiUITests/Pods-TaxiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */,
 				D47C37C91F9C93F100E6F3EC /* PayEndController.swift */,
 				1F2FB48F1F9C48C800870FC9 /* Main.storyboard */,
+				1F99DE9C1FA0478000EB9387 /* LineController.swift */,
 				1F2FB4921F9C48C800870FC9 /* Assets.xcassets */,
 				1F2FB4941F9C48C800870FC9 /* LaunchScreen.storyboard */,
 				1F2FB4971F9C48C800870FC9 /* Info.plist */,
@@ -409,6 +412,7 @@
 				1F9583491F9DD62500829053 /* MatchingController.swift in Sources */,
 				1F95834B1F9E312A00829053 /* DummyUser.swift in Sources */,
 				1F74C3211F9ED78900380795 /* DummyStation.swift in Sources */,
+				1F99DE9D1FA0478100EB9387 /* LineController.swift in Sources */,
 				D47C37C21F9C916300E6F3EC /* ProfileEditController.swift in Sources */,
 				1F2FB48C1F9C48C800870FC9 /* AppDelegate.swift in Sources */,
 			);

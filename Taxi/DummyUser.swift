@@ -8,7 +8,9 @@ class DummyUser {
   "different_ok?": "true",
   "comment": "早く帰りたいです",
   "longitude": "136.884691",
-  "latitude": "35.171011"],
+  "latitude": "35.171011",
+  "end_longitude": "136.877884",
+  "end_latitude": "35.179926"],
 
   ["name": "斎藤豊",
   "email": "saitou@ate.tm",
@@ -18,7 +20,9 @@ class DummyUser {
   "different_ok?": "true",
   "comment": "少しの時間なら待てます",
   "longitude": "136.883801",
-  "latitude": "35.172081"],
+  "latitude": "35.172081",
+  "end_longitude": "136.877884",
+  "end_latitude": "35.179926"],
 
   ["name": "木村和子",
   "email": "kimura@ate.tm",
@@ -28,9 +32,11 @@ class DummyUser {
   "different_ok?": "true",
   "comment": "少しの時間なら待てます",
   "longitude": "136.883479",
-  "latitude": "35.171586"],
+  "latitude": "35.171586",
+  "end_longitude": "136.875851",
+  "end_latitude": "35.181873"],
 
-   ["name": "坂本一美",
+  ["name": "坂本一美",
   "email": "sakamoto@ate.tm",
   "gender": "女",
   "password": "hoge",
@@ -38,7 +44,9 @@ class DummyUser {
   "different_ok?": "true",
   "comment": "少しの時間なら待てます",
   "longitude": "136.883420",
-  "latitude": "35.171647"]
+  "latitude": "35.171647",
+  "end_longitude": "136.875851",
+  "end_latitude": "35.181873"]
   ]
 
   static var account : [String : String] = [
@@ -51,7 +59,7 @@ class DummyUser {
   "longitude": "136.88467",
   "latitude": "35.171888",
   "address": "愛知県名古屋市西区則武新町４丁目１−４４",
-  "end_lonigitude": "136.875851",
-  "end_latitude": "35.181873"
+  "end_longitude": "136.881644",
+  "end_latitude": "35.177821"
   ]
 }

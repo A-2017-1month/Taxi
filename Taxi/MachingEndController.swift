@@ -16,6 +16,7 @@ class MachingEndController: UIViewController {
     var match_user: [String : String] = [:]
     @IBOutlet weak var AnnounceLabel: UILabel!
     @IBOutlet weak var matchingUserName: UILabel!
+    @IBOutlet weak var characteristicLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {

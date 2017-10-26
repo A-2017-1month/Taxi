@@ -213,7 +213,7 @@
                                     <action selector="matchingNot:" destination="jDR-Qg-iLb" eventType="touchUpInside" id="SM7-hI-zDg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="※手数料300円かかります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGY-1G-bA2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="※手数料が10%かかります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGY-1G-bA2">
                                 <rect key="frame" x="90" y="497" width="197" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -269,7 +269,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nameさんはここにいます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkO-Ys-jon">
-                                <rect key="frame" x="44" y="198" width="287" height="21"/>
+                                <rect key="frame" x="44" y="170" width="287" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -298,12 +298,20 @@
                                     <segue destination="6bB-1C-Puz" kind="show" id="GEO-bp-q3b"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こういう特徴です" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-8f-MCh">
+                                <rect key="frame" x="44" y="213" width="287" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.88752523829999996" blue="0.21649359060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="t99-GK-fBu"/>
                     </view>
                     <connections>
                         <outlet property="AnnounceLabel" destination="JkO-Ys-jon" id="7ow-zM-hek"/>
+                        <outlet property="characteristicLabel" destination="nLG-8f-MCh" id="vIm-5I-maM"/>
                         <outlet property="mapView" destination="XXI-ri-vjo" id="ZZU-Jo-Ibn"/>
                         <outlet property="matchingUserName" destination="JkO-Ys-jon" id="e5a-Yt-LOm"/>
                     </connections>
@@ -393,7 +401,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <navigationItem title="プロフィール設定" id="iPW-oJ-jaJ"/>
+                                    <navigationItem title="ステータス設定" id="iPW-oJ-jaJ"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-h9-fRR">
@@ -473,6 +481,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VEn-g7-usY"/>
-        <segue reference="c02-wA-g8f"/>
+        <segue reference="LJI-YF-2DI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -19,6 +19,7 @@ class MatchingController: UIViewController {
         super.viewDidLoad()
         GenderLabel.text = DummyUser.users[current]["gender"]
         NameLabel.text = DummyUser.users[current]["name"]
+        priceLabel.text = DummyUser.users[current]["price"]!+"円お得になります！"
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +28,8 @@ class MatchingController: UIViewController {
 
     @IBAction func backPage(_ sender: UIButton) {
     }
+
+    @IBOutlet weak var priceLabel: UILabel!
 
     @IBAction func matchingDo(_ sender: UIButton) {
         ud.set(DummyUser.users[current], forKey: "resultKey")

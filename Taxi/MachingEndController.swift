@@ -16,13 +16,14 @@ class MachingEndController: UIViewController {
     var match_user: [String : String] = [:]
     @IBOutlet weak var AnnounceLabel: UILabel!
     @IBOutlet weak var matchingUserName: UILabel!
+    @IBOutlet weak var characteristicLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         match_user = ud.object(forKey: "resultKey") as! [String : String]
-        AnnounceLabel.text = (match_user["name"]! + "さんはここにいます") as! String
-
+        AnnounceLabel.text = (match_user["name"]! + "さんはここにいます") 
+        characteristicLabel.text = match_user["comment"] as! String
         let user = ud.object(forKey: "accountKey") as! [String : String]
         var longitude = Double(user["longitude"] as! String)
         var latitude  = Double(user["latitude"] as! String)

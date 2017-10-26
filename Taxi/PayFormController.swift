@@ -1,14 +1,14 @@
 //
-//  PayEndController.swift
+//  PayFormController.swift
 //  Taxi
 //
-//  Created by Katsuya Taguchi on 2017/10/22.
+//  Created by Katsuya Taguchi on 2017/10/26.
 //  Copyright © 2017年 清野隼史. All rights reserved.
 //
 
 import UIKit
 
-class PayEndController: UIViewController {
+class PayFormController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,8 @@ class PayEndController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var IDForm: UITextField!
-    
-    @IBOutlet weak var PasswordForm: UITextField!
-    
-    
-    @IBAction func SignInButton(_ sender: UIButton) {
-        
+    @IBOutlet weak var payForm: UITextField!
+    @IBAction func toHome(_ sender: UIButton) {
     }
 }
+

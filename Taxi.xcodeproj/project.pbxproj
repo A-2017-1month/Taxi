@@ -19,10 +19,10 @@
 		1F95834B1F9E312A00829053 /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95834A1F9E312A00829053 /* DummyUser.swift */; };
 		1F99DE9D1FA0478100EB9387 /* LineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99DE9C1FA0478000EB9387 /* LineController.swift */; };
 		83C62631E3FA0F013ACF5098 /* Pods_Taxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */; };
+		D41B42161FA17DFD00BF6F66 /* PayFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B42151FA17DFD00BF6F66 /* PayFormController.swift */; };
 		D47C37C21F9C916300E6F3EC /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C11F9C916300E6F3EC /* ProfileEditController.swift */; };
 		D47C37C41F9C92F000E6F3EC /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C31F9C92F000E6F3EC /* MapController.swift */; };
 		D47C37C81F9C93D100E6F3EC /* MachingEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */; };
-		D47C37CA1F9C93F100E6F3EC /* PayEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C37C91F9C93F100E6F3EC /* PayEndController.swift */; };
 		D49A60981F9EC3F0002EDBD7 /* sign-up.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60971F9EC3EF002EDBD7 /* sign-up.png */; };
 		D49A609D1F9EC5BD002EDBD7 /* siign-in.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A609C1F9EC5BD002EDBD7 /* siign-in.png */; };
 		D49A60A11F9ECB7D002EDBD7 /* edit-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A609F1F9ECB7D002EDBD7 /* edit-end.png */; };
@@ -33,6 +33,8 @@
 		D49A60AD1F9ED6F8002EDBD7 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D49A60AC1F9ED6F4002EDBD7 /* profile.png */; };
 		D4C370A91FA084F700548D09 /* line-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C370A71FA084F100548D09 /* line-end.png */; };
 		D4C370AA1FA084F700548D09 /* matching-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C370A81FA084F400548D09 /* matching-end.png */; };
+		D4C370B11FA1741900548D09 /* pay-end.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C370AF1FA1741800548D09 /* pay-end.png */; };
+		D4C370B21FA1741900548D09 /* to-pay.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C370B01FA1741800548D09 /* to-pay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +68,10 @@
 		279A35EDD3FC3B816758FF66 /* Pods_Taxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56226B6EB5ABF5C11CC49A23 /* Pods-Taxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taxi/Pods-Taxi.release.xcconfig"; sourceTree = "<group>"; };
 		8D276F13EBFFBDD2D884C229 /* Pods-TaxiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiUITests/Pods-TaxiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D41B42151FA17DFD00BF6F66 /* PayFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayFormController.swift; sourceTree = "<group>"; };
 		D47C37C11F9C916300E6F3EC /* ProfileEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditController.swift; sourceTree = "<group>"; };
 		D47C37C31F9C92F000E6F3EC /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachingEndController.swift; sourceTree = "<group>"; };
-		D47C37C91F9C93F100E6F3EC /* PayEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayEndController.swift; sourceTree = "<group>"; };
 		D49A60971F9EC3EF002EDBD7 /* sign-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sign-up.png"; path = "img/sign-up.png"; sourceTree = SOURCE_ROOT; };
 		D49A609C1F9EC5BD002EDBD7 /* siign-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "siign-in.png"; path = "img/siign-in.png"; sourceTree = SOURCE_ROOT; };
 		D49A609F1F9ECB7D002EDBD7 /* edit-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit-end.png"; path = "img/edit-end.png"; sourceTree = SOURCE_ROOT; };
@@ -80,6 +82,8 @@
 		D49A60AC1F9ED6F4002EDBD7 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = img/profile.png; sourceTree = SOURCE_ROOT; };
 		D4C370A71FA084F100548D09 /* line-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line-end.png"; path = "img/line-end.png"; sourceTree = SOURCE_ROOT; };
 		D4C370A81FA084F400548D09 /* matching-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matching-end.png"; path = "img/matching-end.png"; sourceTree = SOURCE_ROOT; };
+		D4C370AF1FA1741800548D09 /* pay-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pay-end.png"; path = "img/pay-end.png"; sourceTree = SOURCE_ROOT; };
+		D4C370B01FA1741800548D09 /* to-pay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "to-pay.png"; path = "img/to-pay.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +136,8 @@
 				1F74C3201F9ED78900380795 /* DummyStation.swift */,
 				1F9583481F9DD62500829053 /* MatchingController.swift */,
 				1F95834A1F9E312A00829053 /* DummyUser.swift */,
+				D41B42151FA17DFD00BF6F66 /* PayFormController.swift */,
 				D47C37C71F9C93D100E6F3EC /* MachingEndController.swift */,
-				D47C37C91F9C93F100E6F3EC /* PayEndController.swift */,
 				1F2FB48F1F9C48C800870FC9 /* Main.storyboard */,
 				1F99DE9C1FA0478000EB9387 /* LineController.swift */,
 				1F2FB4921F9C48C800870FC9 /* Assets.xcassets */,
@@ -156,6 +160,8 @@
 		D4E1E77C1F9EBD9400269912 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				D4C370AF1FA1741800548D09 /* pay-end.png */,
+				D4C370B01FA1741800548D09 /* to-pay.png */,
 				D4C370A71FA084F100548D09 /* line-end.png */,
 				D4C370A81FA084F400548D09 /* matching-end.png */,
 				D49A60AC1F9ED6F4002EDBD7 /* profile.png */,
@@ -291,7 +297,9 @@
 				D49A60AD1F9ED6F8002EDBD7 /* profile.png in Resources */,
 				D49A60A61F9ED395002EDBD7 /* matching-do.png in Resources */,
 				D49A60981F9EC3F0002EDBD7 /* sign-up.png in Resources */,
+				D4C370B11FA1741900548D09 /* pay-end.png in Resources */,
 				D4C370A91FA084F700548D09 /* line-end.png in Resources */,
+				D4C370B21FA1741900548D09 /* to-pay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47C37CA1F9C93F100E6F3EC /* PayEndController.swift in Sources */,
 				D47C37C41F9C92F000E6F3EC /* MapController.swift in Sources */,
 				D47C37C81F9C93D100E6F3EC /* MachingEndController.swift in Sources */,
 				1F2FB48E1F9C48C800870FC9 /* ViewController.swift in Sources */,
@@ -422,6 +429,7 @@
 				1F74C3211F9ED78900380795 /* DummyStation.swift in Sources */,
 				1F99DE9D1FA0478100EB9387 /* LineController.swift in Sources */,
 				D47C37C21F9C916300E6F3EC /* ProfileEditController.swift in Sources */,
+				D41B42161FA17DFD00BF6F66 /* PayFormController.swift in Sources */,
 				1F2FB48C1F9C48C800870FC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

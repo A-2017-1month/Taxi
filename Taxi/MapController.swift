@@ -15,8 +15,8 @@ class MapController: UIViewController {
   let myMapView = MKMapView()
   let myLocationManager = CLLocationManager()
   @IBOutlet weak var mapView: MKMapView!
-  @IBOutlet weak var rideLocation: UITextField!
-
+  @IBOutlet weak var rideLocation: UILabel!
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     let user = ud.object(forKey: "accountKey") as! [String : String]

@@ -10,9 +10,8 @@ import UIKit
 import MapKit
 
 class ProfileEditController: UIViewController {
-    @IBOutlet weak var NameLabel: UILabel!
-    @IBOutlet weak var AddressLabel: UITextView!
-
+  
+    @IBOutlet weak var AddressLabel: UILabel!
     let myMapView = MKMapView()
     let ud = UserDefaults.standard
     var user : [String : String] = [:]
@@ -50,7 +49,8 @@ class ProfileEditController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var rideLocation: UITextView!
+    @IBOutlet weak var rideLocation: UILabel!
+
     @IBOutlet weak var mapView: MKMapView!
     @IBAction func machingOnOff(_ sender: UISwitch) {
     }

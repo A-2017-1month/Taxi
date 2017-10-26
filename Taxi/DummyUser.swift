@@ -2,7 +2,7 @@ class DummyUser {
   static var users : [[String : String]] = [
   ["name": "田中一郎",
   "email": "tanaka@ate.tm",
-  "gender": "男",
+  "gender": "男性",
   "password": "hoge",
   "account_name": "hoge",
   "different_ok?": "true",
@@ -15,7 +15,7 @@ class DummyUser {
 
   ["name": "斎藤豊",
   "email": "saitou@ate.tm",
-  "gender": "男",
+  "gender": "男性",
   "password": "hoge",
   "account_name": "hoge",
   "different_ok?": "true",
@@ -28,7 +28,7 @@ class DummyUser {
 
   ["name": "木村和子",
   "email": "kimura@ate.tm",
-  "gender": "女",
+  "gender": "女性",
   "password": "hoge",
   "account_name": "hoge",
   "different_ok?": "true",
@@ -41,7 +41,7 @@ class DummyUser {
 
   ["name": "坂本一美",
   "email": "sakamoto@ate.tm",
-  "gender": "女",
+  "gender": "女性",
   "password": "hoge",
   "account_name": "hoge",
   "different_ok?": "true",
@@ -56,7 +56,7 @@ class DummyUser {
   static var account : [String : String] = [
   "name":"山田太郎",
   "email": "yamada@ate.tm",
-  "gender": "男",
+  "gender": "男性",
   "password": "hoge",
   "account_name": "hoge",
   "different_ok?": "true",

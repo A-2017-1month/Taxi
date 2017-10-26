@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     let ud = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         ud.set(DummyUser.account,forKey: "accountKey")
+        idTextform.delegate = self
+        passWord.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,9 +28,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var idTextform: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBAction func signIn(_ sender: UIButton) {
-        
+
     }
     @IBAction func signUp(_ sender: UIButton) {
     }
-}
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        if (textField == idTextform) {
+            passWord?.becomeFirstResponder()
+            } else {
+                // キーボードを閉じる
+                textField.resignFirstResponder()
+            }
+            return true
+        }
+    }
 

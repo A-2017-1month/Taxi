@@ -51,7 +51,7 @@
 		1263967705B7A757E68882D9 /* Pods-TaxiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiUITests/Pods-TaxiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		128350E260FF8FB046C2AD13 /* Pods_TaxiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCACF78C88773CC02A37E9B /* Pods-Taxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taxi/Pods-Taxi.debug.xcconfig"; sourceTree = "<group>"; };
-		1F2FB4881F9C48C800870FC9 /* Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2FB4881F9C48C800870FC9 /* タクシェア.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "タクシェア.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2FB48B1F9C48C800870FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2FB48D1F9C48C800870FC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F2FB4901F9C48C800870FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		1F2FB4891F9C48C800870FC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F2FB4881F9C48C800870FC9 /* Taxi.app */,
+				1F2FB4881F9C48C800870FC9 /* タクシェア.app */,
 				1F2FB49C1F9C48C800870FC9 /* TaxiUITests.xctest */,
 			);
 			name = Products;
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F2FB4871F9C48C800870FC9 /* Taxi */ = {
+		1F2FB4871F9C48C800870FC9 /* タクシェア */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F2FB4A51F9C48C800870FC9 /* Build configuration list for PBXNativeTarget "Taxi" */;
+			buildConfigurationList = 1F2FB4A51F9C48C800870FC9 /* Build configuration list for PBXNativeTarget "タクシェア" */;
 			buildPhases = (
 				2240EF28821B0A89BB5AA08A /* [CP] Check Pods Manifest.lock */,
 				1F2FB4841F9C48C800870FC9 /* Sources */,
@@ -214,9 +214,9 @@
 			);
 			dependencies = (
 			);
-			name = Taxi;
+			name = "タクシェア";
 			productName = Taxi;
-			productReference = 1F2FB4881F9C48C800870FC9 /* Taxi.app */;
+			productReference = 1F2FB4881F9C48C800870FC9 /* タクシェア.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1F2FB49B1F9C48C800870FC9 /* TaxiUITests */ = {
@@ -274,7 +274,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F2FB4871F9C48C800870FC9 /* Taxi */,
+				1F2FB4871F9C48C800870FC9 /* タクシェア */,
 				1F2FB49B1F9C48C800870FC9 /* TaxiUITests */,
 			);
 		};
@@ -447,7 +447,7 @@
 /* Begin PBXTargetDependency section */
 		1F2FB49E1F9C48C800870FC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F2FB4871F9C48C800870FC9 /* Taxi */;
+			target = 1F2FB4871F9C48C800870FC9 /* タクシェア */;
 			targetProxy = 1F2FB49D1F9C48C800870FC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -660,7 +660,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F2FB4A51F9C48C800870FC9 /* Build configuration list for PBXNativeTarget "Taxi" */ = {
+		1F2FB4A51F9C48C800870FC9 /* Build configuration list for PBXNativeTarget "タクシェア" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F2FB4A61F9C48C800870FC9 /* Debug */,

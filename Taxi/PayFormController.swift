@@ -8,19 +8,21 @@
 
 import UIKit
 
-class PayFormController: UIViewController {
-    
+class PayFormController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var payForm: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.payForm.delegate = self as! UITextFieldDelegate
+        self.payForm.becomeFirstResponder()
+        self.payForm.keyboardType = UIKeyboardType.numberPad
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBOutlet weak var payForm: UITextField!
+
     @IBAction func toHome(_ sender: UIButton) {
     }
 }

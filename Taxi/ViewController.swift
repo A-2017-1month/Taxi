@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    var logoImageView: UIImageView!
+    
     let ud = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +19,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
         idTextform.delegate = self
         passWord.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+        self.logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 375 * 1.5, height: 667 * 1.5))
+        self.logoImageView.center = self.view.center
+        self.logoImageView.image = UIImage(named: "screen.png")
+        self.view.addSubview(self.logoImageView)
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.3,
+                                   delay: 1.0,
+                                   options: UIViewAnimationOptions.curveEaseOut,
+                                   animations: { () in
+                                    self.logoImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }, completion: { (Bool) in
+            
+        })
+        UIView.animate(withDuration: 0.2,
+                                   delay: 1.3,
+                                   options: UIViewAnimationOptions.curveEaseOut,
+                                   animations: { () in
+                                    self.logoImageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                                    self.logoImageView.alpha = 0
+        }, completion: { (Bool) in
+            self.logoImageView.removeFromSuperview()
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

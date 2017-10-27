@@ -19,21 +19,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         idTextform.delegate = self
         passWord.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
-        // Do any additional setup after loading the view, typically from a nib.
-        //self.view.backgroundColor = UIColor.white
-        
-        //imageView作成
         self.logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 375 * 1.5, height: 667 * 1.5))
-        //画面centerに
         self.logoImageView.center = self.view.center
-        //logo設定
         self.logoImageView.image = UIImage(named: "screen.png")
-        //viewに追加
         self.view.addSubview(self.logoImageView)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //少し縮小するアニメーション
         UIView.animate(withDuration: 0.3,
                                    delay: 1.0,
                                    options: UIViewAnimationOptions.curveEaseOut,
@@ -42,8 +34,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }, completion: { (Bool) in
             
         })
-        
-        //拡大させて、消えるアニメーション
         UIView.animate(withDuration: 0.2,
                                    delay: 1.3,
                                    options: UIViewAnimationOptions.curveEaseOut,
